@@ -52,12 +52,12 @@ main() {
     else
         echo ""
         echo "Choose Rime configuration to link:"
-        echo "1) oh-my-rime"
-        echo "2) rime-ice"
+        echo "1) rime-ice"
+        echo "2) rime-frost"
         read -p "Enter choice (1 or 2): " choice
         case $choice in
-            1) target="oh-my-rime" ;;
-            2) target="rime-ice" ;;
+            1) target="rime-ice" ;;
+            2) target="rime-frost" ;;
             *) echo "Invalid choice"; exit 1 ;;
         esac
     fi
