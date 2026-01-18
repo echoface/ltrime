@@ -1,6 +1,6 @@
 .DS_Store
 .vscode
 
-rime-ice/build/
-rime-ice/installation.yaml
-rime-ice/rime_ice.userdb/
+rime*/build/
+rime*/installation.yaml
+rime*/rime_ice.userdb/
