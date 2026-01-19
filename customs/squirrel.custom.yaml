@@ -1,0 +1,117 @@
+patch:
+  style/color_scheme: solarized_light
+  style/color_scheme_dark: solarized_dark
+  style/horizontal: true
+  style/inline_preedit: true
+  style/display_tray_icon: true
+  preset_color_schemes:
+    solarized_light:
+      border_height: 0x0
+      border_width: 0x0
+      comment_font_point: 0x12
+      corner_radius: 0xA
+      font_point: 0x15
+      hilited_corner_radius: 0x0
+      inline_preedit: true
+      label_font_point: 0x12
+      line_spacing: 0x5
+      spacing: 0xA
+      base_offset: 0x0
+      text_orientation: horizontal
+      candidate_list_layout: linear
+      color_space: display_p3
+      candidate_format: '%c %@'
+      font_face: Lucida Grande
+      alpha: 0.9
+      author: 雪齋 <lyc20041@gmail.com>
+      name: 曬經・日／Solarized Light
+      text_color: 0xFFA1A095
+      hilited_text_color: 0xFF2C8BAE
+      hilited_back_color: 0xFF4C4022
+      preedit_back_color: 0xFF403516
+      back_color: 0xF0E5F6FB
+      border_color: 0xFFEDFFFF
+      hilited_candidate_label_color: 0xFF2566C6
+      hilited_candidate_text_color: 0xFF3942CB
+      hilited_comment_text_color: 0xFF8144C2
+      hilited_candidate_back_color: 0xFFD7E8ED
+      label_color: 0xFFA36407
+      comment_text_color: 0xFF005947
+      candidate_back_color: 0xF0E5F6FB
+      candidate_text_color: 0xFF595E00
+    solarized_dark:
+      border_height: 0x0
+      border_width: 0x0
+      comment_font_point: 0x12
+      corner_radius: 0xA
+      font_point: 0x15
+      hilited_corner_radius: 0x0
+      inline_preedit: true
+      label_font_point: 0x12
+      line_spacing: 0x5
+      spacing: 0xA
+      base_offset: 0x0
+      text_orientation: horizontal
+      candidate_list_layout: linear
+      color_space: display_p3
+      candidate_format: '%c %@'
+      font_face: Lucida Grande
+      alpha: 0.9
+      author: 雪齋 <lyc20041@gmail.com>
+      name: 曬經・月／Solarized Dark
+      hilited_text_color: 0xFFBE706D
+      text_color: 0xFF756E5D
+      hilited_back_color: 0xFFC9DADF
+      preedit_back_color: 0xFFD7E8ED
+      back_color: 0xF0352A0A
+      border_color: 0xFF2A1F00
+      candidate_back_color: 0xF0352A0A
+      label_color: 0xFF478DF4
+      candidate_text_color: 0xFF7389FF
+      comment_text_color: 0xFFC38AFF
+      hilited_candidate_back_color: 0xFF403516
+      hilited_candidate_text_color: 0xFF989F52
+      hilited_candidate_label_color: 0xFFCC8947
+      hilited_comment_text_color: 0xFF289989
+  app_options:
+    co.zeit.hyper:
+      ascii_mode: true
+    com.alfredapp.Alfred:
+      ascii_mode: true
+    com.apple.Spotlight:
+      ascii_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+    com.apple.dt.Xcode:
+      ascii_mode: true
+    com.barebones.textwrangler:
+      ascii_mode: true
+    com.blacktree.Quicksilver:
+      ascii_mode: true
+    com.github.atom:
+      ascii_mode: true
+    com.google.Chrome:
+      inline: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      no_inline: true
+    com.macromates.TextMate.preview:
+      ascii_mode: true
+    com.microsoft.VSCode:
+      ascii_mode: true
+    com.runningwithcrayons.Alfred-2:
+      ascii_mode: true
+    com.sublimetext.2:
+      ascii_mode: true
+    ' org.gnu.Aquamacs':
+      ascii_mode: true
+    org.gnu.Emacs:
+      ascii_mode: true
+      no_inline: true
+    org.vim.MacVim:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    ru.keepcoder.Telegram:
+      inline: true
