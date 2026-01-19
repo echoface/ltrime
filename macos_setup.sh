@@ -41,6 +41,36 @@ link_rime() {
     echo "Created symlink: $RIME_DIR -> $target_dir"
 }
 
+setup_config() {
+    local target="$1"
+    local url=""
+    
+    case $target in
+        "rime-ice")
+            url="https://github.com/iDvel/rime-ice.git"
+            ;;
+        "rime-frost")
+            url="https://github.com/gaboolic/rime-frost.git"
+            ;;
+        *)
+            echo "Unknown target: $target"
+            exit 1
+            ;;
+    esac
+
+    if [ ! -d "$SCRIPT_DIR/$target" ]; then
+        echo "Cloning $target..."
+        git clone --depth 1 "$url" "$SCRIPT_DIR/$target"
+    else
+        echo "Directory $target already exists."
+        read -p "Do you want to update it? (y/n): " update_choice
+        if [[ "$update_choice" == "y" || "$update_choice" == "Y" ]]; then
+            echo "Updating $target..."
+            (cd "$SCRIPT_DIR/$target" && git pull)
+        fi
+    fi
+}
+
 main() {
     check_brew
     install_squirrel
@@ -51,7 +81,7 @@ main() {
         target="$1"
     else
         echo ""
-        echo "Choose Rime configuration to link:"
+        echo "Choose Rime configuration to setup and link:"
         echo "1) rime-ice"
         echo "2) rime-frost"
         read -p "Enter choice (1 or 2): " choice
@@ -62,6 +92,8 @@ main() {
         esac
     fi
 
+    setup_config "$target"
+    
     local full_target="$SCRIPT_DIR/$target"
     link_rime "$full_target"
 
